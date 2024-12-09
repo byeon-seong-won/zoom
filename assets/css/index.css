@@ -276,10 +276,13 @@ main {
     margin-top: 1.14vw;
 }
 .col-left .swiper img.img-margin {
-    margin-right: -1.64vw;
+    margin-right: -50px;
+}
+.col-left .swiper img.img-size {
+    width: 70%;
 }
 .col-left .swiper img.position {
-    margin-top: 0.2vw;
+    margin-top: 4px;
 }
 .col-left .swiper-navi {
     position: absolute;
@@ -289,7 +292,7 @@ main {
     transform: translateY(-50%);
     margin-top: -0.78vw;
     z-index: 10;
-    padding: 0 1.52vw;
+    padding: 0 1vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -346,17 +349,22 @@ main {
 .col-left .info-area li img {
     width: 3.43vw;
 }
+.col-left .info-area li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .col-left .info-area li p {
     text-align: center;
-    margin-top: 0.46vw;
+    margin-top: 0.57vw;
     font-weight: 600;
-    font-size: 0.46vw;
+    font-size: 0.859vw;
     letter-spacing: -0.03em;
     color: #000;
 }
 .col-left .info-area .info-box {
     padding: 1.14vw 1.04vw;
-    font-size: 0.78vw;
+    font-size: 0.859vw;
     letter-spacing: -0.05em;
     background: #FFE9D7;
     line-height: normal;
@@ -778,206 +786,6 @@ main {
 /* 2200px 이하 고정 */
 @media (max-width:2200px) {
 
-    /* header {
-        height: 66px;
-    }
-    header h1 {
-        width: 124px;
-    }
-    main {
-        margin-top: 66px;
-        width: 870px;
-        height: calc(100vh - 66px);
-    }
-    .col-left,
-    .col-right {
-        max-width: none;
-        width: 387px;
-    }
-    .col-left {
-        padding-top: 40px;
-    }
-    .col-left .fixed-area span {
-        padding: 9px 18px;
-        font-size: 12px;
-        border-radius: 16px;
-        gap: 5px;
-    }
-    .col-left .fixed-area span::before,
-    .col-left .fixed-area span::after {
-        width: 3px;
-        height: 3px;
-    }
-    .col-left .fixed-area h2 {
-        margin-top: 23px;
-        font-size: 28px;
-    }
-    .col-left .fixed-area > p {
-        color: #434343;
-        font-size: 15px;
-    }
-
-
-    .col-left .info-area ul {
-        margin-top: 2.3vw;
-        gap: 1.35vw;
-        border: 1px solid #000;
-    }
-    .col-left .info-area li img {
-        width: 75px;
-    }
-    .col-left .info-area li p {
-        margin-top: 9px;
-        font-size: 10px;
-    }
-    .col-left .info-area .info-box {
-        padding: 30px 66px;
-        font-size: 13px;
-    }
-    .col-left .swiper-area {
-        margin: 70px auto 0;
-    }
-
-
-    .col-left .swiper-area .step {
-        padding: 7px 12px;
-        font-size: 14px;
-        border-radius: 34px;
-    }
-    .col-left .swiper-area .step-desc {
-        margin-top: 12px;
-        font-size: 22px;
-    }
-    .col-left .swiper-area .step-progress {
-        margin-top: 34px;
-        font-size: 18px;
-    }
-    .col-left .swiper-area .step-text {
-        margin-top: 18px;
-        font-size: 19px;
-    }
-    .col-left .swiper {
-        margin-top: 28px;
-    }
-    .col-left .swiper img.img-margin {
-        margin-right: -36px;
-    }
-    .col-left .swiper img.position {
-        margin-top: 5px;
-    }
-    .swiper-pagination {
-        margin-top: 30px;
-    }
-    .col-left .swiper .navi-prev,
-    .col-left .swiper .navi-next {
-        width: 34px;
-        height: 34px;
-    }
-    .swiper-pagination-bullet {
-        width: 5px;
-        height: 5px;
-    }
-    .swiper-pagination-bullet-active {
-        width: 9px !important;
-        height: 9px !important;
-    }
-    .col-right {
-        width: 483px;
-    }
-    .col-right .bg-area {
-        padding: 65px 11px 14px;
-        height: 698px;
-    }
-    .col-right .bg-area  h2 {
-        margin-top: 28px;
-        font-size: 46px;
-    }
-    .bg-area .mark {
-        padding: 3px;
-        border-radius: 27px;
-        gap: 4px;
-    }
-    .bg-area .mark span {
-        padding-left: 9px;
-        font-size: 19px;
-    }
-    .bg-area .mark img {
-        width: 22px;
-    }
-    .step-area {
-        padding: 34px 21px 0;
-    }
-    .step-list li {
-        padding: 20px 28px;
-        gap: 14px;
-        border-radius: 17px;
-        font-size: 19px;
-    }
-    .step-list li::before {
-        width: 6.9px;
-        height: 6.9px;
-    }
-    .user-area {
-        margin-top: 95px;
-        padding: 0 44px;
-    }
-    .user-area h2 {
-        font-size: 24px;
-    }
-    .user-area p {
-        margin-top: 10px;
-        font-size: 18px;
-    }
-    .user-area button {
-        padding: 16px 86px;
-        margin-top: 28px;
-        gap: 10px;
-        border-radius: 62px;
-        font-size: 19px;
-    }
-    .user-area button::after {
-        width: 19px;
-        height: 21px;
-    }
-    .user-area.hint button::after {
-        content: '';
-        width: 20px;
-        height: 20px;
-        background: url(../img/ico-search.svg) no-repeat center / 100%;
-    }
-    .input-area {
-        max-width: none;
-        width: 483px;
-        height: 67px;
-        padding: 13px 11px;
-    }
-    .input-area div {
-        border-radius: 11px;
-    }
-    .input-area input {
-        padding: 12px 64px 12px 11px;
-        border-radius: 11px;
-        font-size: 15px;
-    }
-    .input-area input::placeholder {
-        font-size: 15px;
-    }
-    .input-area button {
-        right: 3px;
-        width: 48px;
-        height: 34px;
-        border-radius: 8px;
-        font-size: 16px;
-    }
-    .btn-contact {
-        right: 34px;
-        bottom: 34px;
-        width: 77px;
-        height: 77px;
-    } */
-
-
-
 
     .baseDimmed.ver1 .pop-area {
         padding-top: 44px;
@@ -1039,17 +847,8 @@ main {
 
 
 
-
-
-
-
-
-
-/* @media (max-width:1920px) {
-    .col-left {
-        padding-top: 1.82vw;
+@media (max-width:1440px) {
+    .col-left .info-area li img {
+        width: 4.8vw;
     }
-    .col-left .swiper-area {
-        margin: 2.08vw auto 0;
-    }
-} */
+}
