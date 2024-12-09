@@ -148,6 +148,7 @@ main {
     height: calc(100vh - 2.969vw);
     display: flex;
     justify-content: center;
+    min-width: 1300px;
 }
 
 
@@ -774,6 +775,11 @@ main {
 
 
 
+/* 권장브라우저 크기 팝업 */
+.resize {
+    display: none;
+}
+
 
 
 
@@ -847,8 +853,41 @@ main {
 
 
 
-@media (max-width:1440px) {
-    .col-left .info-area li img {
-        width: 4.8vw;
+
+@media (max-width:1300px) {
+    
+    /* 권장브라우저 크기 팝업 */
+    header {
+        height: 38px;
+    }
+    header h1 {
+        width: 73px;
+    }
+    .resize {
+        position: fixed;
+        top: 38px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        background-color: #FBFBFD;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resize img {
+        max-width: 439px;
+        width: 70%;
+    }
+    .resize p {
+        margin-top: 19px;
+        font-size: clamp(16px, 1.84vw, 24px);
+        color: #646464;
+    }
+    .resize p em {
+        font-weight: 700;
     }
 }
