@@ -433,10 +433,7 @@ main {
     font-family: 'Tenada';
     font-size: 2.1vw;
     color: #fff;
-    line-height: normal;
-}
-.col-right h2 p {
-    line-height: 1.1;
+    line-height: 1.3;
 }
 .col-right .type {
     background: linear-gradient(90deg, #E8B2FD 10%, #87A0E5 60%, #F9FFC0 91.5%);
@@ -859,7 +856,11 @@ main {
 
 
 
-@media (max-width:1300px) {
+
+
+
+
+@media (max-width:900px) {
     
     /* 권장브라우저 크기 팝업 */
     header {
